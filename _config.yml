@@ -1,8 +1,8 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
-paginate: 1
+title: thud empty hollow !!!!!
+tagline: five exclamation marks, the sure sign of an insane mind -- pratchett
+url: https://bijumon.github.com
+paginate: 9
 baseurl: ""
 permalink: pretty
 
@@ -21,6 +21,7 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - vendor
 
 sass:
   sass_dir: _sass
@@ -33,9 +34,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: bijumon
+  url: https://twitter.com/bijupunalor
+  email: _biju_punalor_@_gee_mail_._com_
 
 # Custom vars
-version: 3.0.0
+version: 1.0
