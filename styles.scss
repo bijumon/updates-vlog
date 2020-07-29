@@ -27,21 +27,41 @@
 @import "posts";
 @import "pagination";
 @import "message";
-@import "toc";
 
-// Sass for creating the swatches
-.colors {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-
-  dt {
-    width: 3rem;
-    height: 3rem;
-    border-radius: var(--border-radius);
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,.15);
-  }
-
-  dd {
-    margin-left: var(--spacer);
-  }
+html {
+	font-family: "Fira Sans","Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Droid Sans","Helvetica Neue",Arial,sans-serif;
 }
+
+.masthead-title small { display: block; }
+.masthead { margin-bottom: 0; }
+
+.site-links {
+    margin-bottom: 2em;
+    padding: 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $gray-2;
+    
+    li { display: inline-block; }
+}
+
+.posts { 
+    .post { margin: 0; }
+
+    .post-title {
+        margin: 0;
+        padding: 0;
+
+        time { display: inline-block; }
+        li { list-style-type: none; }
+    }
+}
+
+.lead-post {
+    .post {
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid $gray-2;
+    }
+}
+
+.post-title { text-transform: capitalize; }

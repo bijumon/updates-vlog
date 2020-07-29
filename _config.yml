@@ -1,9 +1,11 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
-paginate: 1
+title: "Godot, Kotlin and Unity"
+tagline: "On game design and coding"
+description: 'gamedev gamedesign Unity Java Kotlin bijumon @bijupunalor bijumon.github.io hosted at <a href="https://help.github.com/articles/using-jekyll-with-pages/">github-pages</a>. modified <a href="https://github.com/poole/poole">poole</a> theme by <a href="http://markdotto.com/about/">mdo</a> ty <3'
+url: http://bijumon.github.io
 baseurl: ""
+paginate: 9
+excerpt_separator: <!--more--> 
 permalink: pretty
 
 # Gems
@@ -11,6 +13,7 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-commonmark-ghpages
 
 # Optimize Jekyll
 exclude:
@@ -21,21 +24,27 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - poole-for-jekyll.gemspec
 
+markdown: CommonMarkGhPages
 sass:
   sass_dir: _sass
   style: :compressed
 
-# Options
-
 # Replace this value and uncomment to enable Google Analytics tracking
+#
 # ga_analytics: UA-000000-0
 
-# Specify the author for blog posts
+# About/contact
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
+  name: bijumon
+  url: https://www.b1ju.in
   email: markdotto@gmail.com
+  twitter: https://twitter.com/bijupunalor
+  github:
+    repo: https://github.com/bijumon/bijumon.github.io
 
 # Custom vars
 version: 3.0.0
+github:
+  repo: https://github.com/poole/poole
