@@ -2,8 +2,6 @@
 tags: [ libgdx, gamedev ]
 ---
 
-An updated collection is available at [libgdx resources 2020](/2020/07/30/libgdx-resources/)
-
 -   [libgdx Wiki](https://github.com/libgdx/libgdx/wiki/Introduction)
 -   [Features](http://libgdx.badlogicgames.com/features.html) - Bitmaps,
     textures, TiledMaps, Fonts, Sprite batch....
@@ -18,25 +16,14 @@ An updated collection is available at [libgdx resources 2020](/2020/07/30/libgdx
 -   [API javadoc](http://libgdx.badlogicgames.com/nightlies/docs/api/)
 -   [gdx-setup *File not found*
     problem](http://stackoverflow.com/questions/22822767/new-libgdx-setup-receive-file-not-found)
--   [Eclipse, IDEA, Android Studio and gradle - building libgdx]()
+-   [libgdx - gradle and IntelliJ IDEA](https://github.com/libgdx/libgdx/wiki/Gradle-and-Intellij-IDEA)
 
 Tutorials
 ---------
-
--   [toxsickproductions Tutorial
-    Series](http://www.toxsickproductions.com/libgdx/libgdx-basics-game-and-screens/)
-    ★★★★
--   [Android Game Development with libgdx -
-    obviam.net](http://obviam.net/index.php/getting-started-in-android-game-development-with-libgdx-create-a-working-prototype-in-a-day-tutorial-part-1/)
-    ★★★
 -   [gamefromscratch](http://www.gamefromscratch.com/page/LibGDX-Tutorial-series.aspx)
-    ★★★
--   [One Game, Many Frameworks -
-    libgdx](http://www.rengelbert.com/tutorial.php?id=179&show_all=true)
--   [FlappyBird using Overlap2D and
-    libgdx](http://www.gamefromscratch.com/post/2014/09/08/Guest-Tutorial-Making-Flappy-Bird-using-Overlap2D-and-LibGDX.aspx)
--   [Bitowl tutorials](http://bitowl.de/category/android/libgdx/) *links
-    to older articles are broken*
+-   [toxsickproductions Tutorial Series](https://web.archive.org/web/20140806222937/http://www.toxsickproductions.com/libgdx/libgdx-basics-game-and-screens/)
+-   [Create a 2D Platformer with libGDX](https://obviam.net/posts/2013/04.libgdx-collision-detection-tutorial-part4/)
+-   [FlappyBird using Overlap2D and libgdx](http://www.gamefromscratch.com/post/2014/09/08/Guest-Tutorial-Making-Flappy-Bird-using-Overlap2D-and-LibGDX.aspx)
 
 Techniques
 ----------
@@ -44,4 +31,4 @@ Techniques
 -   [Isometric Tilemap
     Rendering](http://www.badlogicgames.com/wordpress/?p=2032)
 -   [Orthographic Camera with Mouse
-    Scroll](http://pixelimperfect.blogspot.in/2012/09/tutorial-libgdx-orthographic-camera.html)
+    Scroll](http://pixelimperfect.blogspot.com/2012/09/tutorial-libgdx-orthographic-camera.html)
