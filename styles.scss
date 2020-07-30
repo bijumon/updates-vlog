@@ -65,3 +65,26 @@ html {
 }
 
 .post-title { text-transform: capitalize; }
+
+.highlight {
+    margin: 0; 
+    padding: 0 4px; 
+    font-family: "fira code", Menlo, onaco, "Courier New", monospace;
+}
+pre, code {
+    font-family: "fira code", Menlo, onaco, "Courier New", monospace;
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 50em;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .container {
+        max-width: 60em;
+    }
+}
