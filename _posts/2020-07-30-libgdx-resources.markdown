@@ -2,14 +2,16 @@
 tags: [ libgdx, gamedev ]
 ---
 
+- [tommyettinger/gdx-liftoff: A modern setup tool for libGDX Gradle projects](https://github.com/tommyettinger/gdx-liftoff) -  A better gdx-setup circa 2020
+- [gdx-setup.jar](https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle) creates a skeleton project with platform specific subprojects and IDE files for *Eclipse* or *IDEA*
+
 - [libgdx Wiki](https://github.com/libgdx/libgdx/wiki/Introduction)
 - [Features](http://libgdx.badlogicgames.com/features.html) - Bitmaps, textures, TiledMaps, Fonts, Sprite batches etc
-- [gdx-setup.jar](https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle) creates a skeleton project with platform specific subprojects and IDE files for *Eclipse* or *IDEA*
 - [JUnit with libGDX using Gradle](http://shahmirj.com/blog/getting-junit-working-with-libgdx-in-gradle) - Unit Testing libgdx using gdx-backend-headless
 - [Starter classes and configuration · libgdx/libgdx Wiki](https://github.com/libgdx/libgdx/wiki/Starter-classes-and-configuration)
 - [Application framework](https://github.com/libgdx/libgdx/wiki/The-application-framework)
 - [API javadoc](http://libgdx.badlogicgames.com/nightlies/docs/api/)
-- [gdx-setup *File not found* problem - Android](http://stackoverflow.com/questions/22822767/new-libgdx-setup-receive-file-not-found)
+- [Android - gdx-setup *File not found* problem](http://stackoverflow.com/questions/22822767/new-libgdx-setup-receive-file-not-found)
 - [libgdx - gradle and IntelliJ IDEA](https://github.com/libgdx/libgdx/wiki/Gradle-and-Intellij-IDEA)
 
 Tutorials
