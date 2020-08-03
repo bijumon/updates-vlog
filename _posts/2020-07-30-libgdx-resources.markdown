@@ -2,8 +2,8 @@
 tags: [ libgdx, gamedev ]
 ---
 
-- [tommyettinger/gdx-liftoff: A modern setup tool for libGDX Gradle projects](https://github.com/tommyettinger/gdx-liftoff) -  A better gdx-setup circa 2020
-- [gdx-setup.jar](https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle) creates a skeleton project with platform specific subprojects and IDE files for *Eclipse* or *IDEA*
+- [gdx-liftoff](https://github.com/tommyettinger/gdx-liftoff) - A modern setup tool for libGDX Gradle projects
+- [gdx-setup.jar](https://github.com/libgdx/libgdx/wiki/Project-Setup-Gradle) creates a skeleton project with platform specific subprojects
 - [libgdx Wiki](https://github.com/libgdx/libgdx/wiki/Introduction)
 - [Features](http://libgdx.badlogicgames.com/features.html) - Bitmaps, textures, TiledMaps, Fonts, Sprite batches etc
 - [JUnit with libGDX using Gradle](http://shahmirj.com/blog/getting-junit-working-with-libgdx-in-gradle) - Unit Testing libgdx using gdx-backend-headless
