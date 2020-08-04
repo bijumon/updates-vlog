@@ -12,7 +12,7 @@ siteconfig
 *command-line*. `ArgumentParser` sets up the required parameters.
 `__cmdline` is a dictionary with `source` and `output`.
 
-```
+``` python
     parser = ArgumentParser("pgen static site generator")
     parser.add_argument("-s", "--source", help="source directory", required=True)
     parser.add_argument("-o", "--output", help="output directory", required=True)
@@ -21,7 +21,7 @@ siteconfig
 
 Load `_config.toml` if it exists.
 
-```
+``` python
     config_file = join(self.source,'_config.toml')
     if exists(config_file):
       print("reading %s" % config_file)
@@ -38,7 +38,7 @@ Load `_config.toml` if it exists.
 Merge `__cmdline` into `__toml_config` to create the `siteconfig`
 dictionary.
 
-```
+``` python
     siteconfig = dict(list(__toml_config.items()) + list(__cmdline.items()))
 ```
 
@@ -49,7 +49,7 @@ List of files
 hidden folders, dotfiles or partials. A *hidden folder* or a *dotfile*
 begins with **'.'** and *partial* begins with an underscore **'\_'**
 
-```
+``` python
     source_files = []
     for root, dirs, files in walk(self.source):
       if files and not "/.git" in root:
@@ -66,7 +66,7 @@ begins with **'.'** and *partial* begins with an underscore **'\_'**
 
 `output_path` tells us where to save a file from `source_files`
 
-```
+``` python
     def output_path(srcfile_path):
       prefix = commonprefix([self.source, srcfile_path])
       __outfile = relpath(srcfile_path, prefix)
@@ -119,7 +119,7 @@ regular expression `^-{3,}$`.
 2.  [github
     eyeseast/python-frontmatter](https://github.com/eyeseast/python-frontmatter)
 
-```
+``` python
     with open(srcfile, 'r') as tmpl_fh:
       self.war_text = tmpl_fh.read()
     tmpl_fh.close()
@@ -138,7 +138,7 @@ regular expression `^-{3,}$`.
 Markdown files are rendered first using python-markdown before
 processing them as templates.
 
-```
+``` python
     if markdown_file(srcfile):
       __template_text = Markdown().convert(src_content)
     else:
@@ -148,4 +148,3 @@ processing them as templates.
 
     __template = __env.from_string(__template_text)
 ```
-
