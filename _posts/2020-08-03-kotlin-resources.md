@@ -9,7 +9,6 @@ tags: [ kotlin ]
 - [Basic Syntax](https://kotlinlang.org/docs/reference/basic-syntax.html)
 - [Learn by Example](https://play.kotlinlang.org/byExample/01_introduction/01_Hello%20world)
 - [Playground: Edit, Run, Share](https://play.kotlinlang.org/)
-- [8-Minute Crash Course by Tanu N Prabhu](https://blog.kotlin-academy.com/8-minute-crash-course-on-kotlin-programming-language-e8a804ed3d8a)
 - [Running Code Snippets](https://kotlinlang.org/docs/tutorials/quick-run.html)
 - [Mastering Kotlin standard functions: run, with, let, also and apply by Elye](https://medium.com/mobile-app-development-publication/mastering-kotlin-standard-functions-run-with-let-also-and-apply-9cd334b0ef84)
 - [Kotlin Track | Exercism](https://exercism.io/my/tracks/kotlin)
