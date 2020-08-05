@@ -66,6 +66,23 @@ html {
 
 .post-title { text-transform: capitalize; }
 
+.post { 
+    .post-date,
+    .post-tags {
+        display: inline-block; 
+        margin-bottom: 1em;
+    }
+
+    .post-tags {
+        .tag {
+            background-color: lighten($color: $blue, $amount: 30%);
+            color: white;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+    }
+}
+
 .highlight { padding: 8px 0; }
 .highlight, pre, code,
 article p em {
