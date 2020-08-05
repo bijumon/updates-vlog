@@ -66,13 +66,13 @@ html {
 
 .post-title { text-transform: capitalize; }
 
-.highlight {
-    margin: 6px 4px; 
-    padding: 6px; 
+.highlight { padding: 8px 0; }
+.highlight, pre, code,
+article p em {
     font-family: "fira code", Menlo, Monaco, "Courier New", monospace;
 }
+
 pre, code {
-    font-family: "fira code", Menlo, Monaco, "Courier New", monospace;
     white-space: pre-wrap;       /* css-3 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
