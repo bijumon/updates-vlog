@@ -2,15 +2,15 @@
 tags: [ python, projects ]
 ---
 
-`pgen` converts a folder of template (jinja2) and markdown files to
+**_pgen_** converts a folder of template (jinja2) and markdown files to
 html, while preserving paths.
 
 siteconfig
 ----------
 
-`site.source` and `site.output` is specified in `_config.toml` or at the
-*command-line*. `ArgumentParser` sets up the required parameters.
-`__cmdline` is a dictionary with `source` and `output`.
+_site.source_ and _site.output_ is specified in *_config.toml* or at the
+*command-line*. _ArgumentParser_ sets up the required parameters.
+*__cmdline* is a dictionary with _source_ and _output_.
 
 ``` python
     parser = ArgumentParser("pgen static site generator")
@@ -19,7 +19,7 @@ siteconfig
     __cmdline = vars(parser.parse_args())
 ```
 
-Load `_config.toml` if it exists.
+Load *_config.toml* if it exists.
 
 ``` python
     config_file = join(self.source,'_config.toml')
@@ -35,7 +35,7 @@ Load `_config.toml` if it exists.
       exit("Error: cannot find config file, _config.toml")
 ```
 
-Merge `__cmdline` into `__toml_config` to create the `siteconfig`
+Merge *__cmdline* into *__toml_config* to create the _siteconfig_
 dictionary.
 
 ``` python
@@ -45,7 +45,7 @@ dictionary.
 List of files
 -------------
 
-`source_files` is a list of files to be converted or copied, without
+_source_files_ is a list of files to be converted or copied, without
 hidden folders, dotfiles or partials. A *hidden folder* or a *dotfile*
 begins with **'.'** and *partial* begins with an underscore **'\_'**
 
@@ -64,7 +64,7 @@ begins with **'.'** and *partial* begins with an underscore **'\_'**
           source_files.append(join(root,srcfile))
 ```
 
-`output_path` tells us where to save a file from `source_files`
+_output_path_ tells us where to save a file from _source_files_
 
 ``` python
     def output_path(srcfile_path):
@@ -109,7 +109,7 @@ Processing Templates
 3.  Convert raw\_text using **Jinja2** using siteconfig as `site` and
     toml as `page`
 
-Split the source file into `front_matter` and `src_content` using the
+Split the source file into _front_matter_ and _src_content_ using the
 regular expression `^-{3,}$`.
 
 ##### ref:
