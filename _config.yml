@@ -25,6 +25,7 @@ exclude:
   - LICENSE.md
   - README.md
   - poole-for-jekyll.gemspec
+  - _attic
 
 markdown: CommonMarkGhPages
 sass:
