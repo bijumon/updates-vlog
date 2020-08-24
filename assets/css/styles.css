@@ -1,0 +1,46 @@
+body {
+    max-width: 1024px;
+    color: #342605;
+    text-rendering: optimizeLegibility;
+}
+
+article {
+    padding: 2em 0;
+}
+
+code, pre > code {
+    font-family: "Fira Code", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    width:100%;
+}
+
+
+/* 
+    Browser specific (not valid) styles to make preformatted text wrap 
+    https://css-tricks.com/snippets/css/make-pre-text-wrap/
+*/		
+
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.highlight {
+    background-color: inherit;
+}
+
+h2, h3 {
+    font-style: normal;
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+
+    code, pre > code {
+        font-size: 1rem;
+    }
+}

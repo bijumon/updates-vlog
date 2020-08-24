@@ -1,0 +1,35 @@
+---
+layout: default
+title: Home
+---
+
+<div class="lead-post">
+  {% for post in paginator.posts limit:1 %}
+  <article class="post">
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    {{ post.excerpt }}
+  </article>
+  {% endfor %}
+</div>
+
+<div class="posts">
+  <p>
+    <b>recent</b>
+  </p>
+
+  {% for post in paginator.posts offset:1 %}
+  <article class="post">
+    <ul class="post-title">
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }} - </time>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    </ul>
+  </article>
+  {% endfor %}
+</div>
