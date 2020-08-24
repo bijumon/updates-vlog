@@ -7,6 +7,7 @@ baseurl: ""
 paginate: 9
 excerpt_separator: <!--more--> 
 permalink: pretty
+timezone: Asia/Kolkata
 
 # Gems
 plugins:
