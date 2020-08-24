@@ -12,3 +12,5 @@ pgen, a static site generator in python. I am learning python 3 and the objectiv
 1. finish a working project ;)
 
 ref: [Original design](https://bijumon.github.io/2014/12/30/implementing-pgen/)
+
+class Site, SiteConfig, Posts, Post, Page, Feed
