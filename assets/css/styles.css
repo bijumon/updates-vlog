@@ -31,6 +31,13 @@ pre {
     background-color: inherit;
 }
 
+.site-links { padding: 0; margin:0;}
+.site-links li {
+    list-style-type: none;
+    display: inline-block;
+}
+.site-links li a { background: 0;}
+
 h2, h3 {
     font-style: normal;
 }
