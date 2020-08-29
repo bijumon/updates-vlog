@@ -1,0 +1,41 @@
+@media only screen and (min-width: 1280px) {
+	body{
+		font-size: 20px;
+	}
+
+	a { color: #3D72FF; }
+
+	.main {
+		max-width: 1024px;
+	}
+
+	.site-title {
+		font-size: 32px !important;
+		font-weight: 900;
+		color: #233B5D;
+	}
+
+	.nav-list .nav-list-item, .aux-nav {
+		font-size: 18px !important;
+	}
+
+	.post {
+		margin-bottom: 4em !important;
+	
+		h1.post-title {
+		font-weight: 800;
+		text-transform: capitalize;
+
+		a { color: #233B5D; }
+		}
+
+		.post-date {
+			color: gray;
+			font-style: italic;
+		}
+	}
+
+	code, kbd, pre, samp {
+		font-size: 0.9em;
+	}
+}
