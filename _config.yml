@@ -16,7 +16,7 @@
 title: B1 &starf; JU &starf; IN
 description: Ye know full well that the meaning of life is to find your gift. To find your gift is happiness. Never tae find it is misery.
 #baseurl: "/just-the-docs" # the subpath of your site, e.g. /blog
-url: "https://pmarsceill.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://blog.b1ju.in" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 excerpt_separator: "<!--more-->"

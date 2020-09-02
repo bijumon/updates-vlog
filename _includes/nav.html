@@ -41,6 +41,7 @@
                         <a href="{{ grand_child.url | absolute_url }}" class="nav-list-link{% if page.url == grand_child.url %} active{% endif %}">{{ grand_child.title }}</a>
                       </li>
                     {%- endfor -%}
+
                     </ul>
                   {%- endif -%}
                 </li>
@@ -52,4 +53,8 @@
       {%- endif -%}
     {%- endunless -%}
   {%- endfor -%}
+  <hr/>
+  <li class="nav-list-item">
+      <a href="" class="nav-list-link">Loper OS</a>
+  </li>
 </ul>
