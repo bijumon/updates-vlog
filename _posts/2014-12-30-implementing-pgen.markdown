@@ -13,33 +13,33 @@ _site.source_ and _site.output_ is specified in *_config.toml* or at the
 *__cmdline* is a dictionary with _source_ and _output_.
 
 ``` python
-    parser = ArgumentParser("pgen static site generator")
-    parser.add_argument("-s", "--source", help="source directory", required=True)
-    parser.add_argument("-o", "--output", help="output directory", required=True)
-    __cmdline = vars(parser.parse_args())
+parser = ArgumentParser("pgen static site generator")
+parser.add_argument("-s", "--source", help="source directory", required=True)
+parser.add_argument("-o", "--output", help="output directory", required=True)
+__cmdline = vars(parser.parse_args())
 ```
 
 Load *_config.toml* if it exists.
 
 ``` python
-    config_file = join(self.source,'_config.toml')
-    if exists(config_file):
-      print("reading %s" % config_file)
+config_file = join(self.source,'_config.toml')
+if exists(config_file):
+  print("reading %s" % config_file)
 
-      with open(config_file, 'r') as fh:
-        _toml = fh.read()
-      fh.close()
+  with open(config_file, 'r') as fh:
+    _toml = fh.read()
+  fh.close()
 
-      __toml_config = toml.loads(_toml)
-    else:
-      exit("Error: cannot find config file, _config.toml")
+  __toml_config = toml.loads(_toml)
+else:
+  exit("Error: cannot find config file, _config.toml")
 ```
 
 Merge *__cmdline* into *__toml_config* to create the _siteconfig_
 dictionary.
 
 ``` python
-    siteconfig = dict(list(__toml_config.items()) + list(__cmdline.items()))
+siteconfig = dict(list(__toml_config.items()) + list(__cmdline.items()))
 ```
 
 List of files
@@ -50,27 +50,27 @@ hidden folders, dotfiles or partials. A *hidden folder* or a *dotfile*
 begins with **'.'** and *partial* begins with an underscore **'\_'**
 
 ``` python
-    source_files = []
-    for root, dirs, files in walk(self.source):
-      if files and not "/.git" in root:
-        # remove hidden files or directories
-        # http://stackoverflow.com/questions/13454164/os-walk-without-hidden-folders
+source_files = []
+for root, dirs, files in walk(self.source):
+  if files and not "/.git" in root:
+    # remove hidden files or directories
+    # http://stackoverflow.com/questions/13454164/os-walk-without-hidden-folders
 
-        files = [f for f in files if not f[0] == '.']
-        files = [f for f in files if not f.startswith('_')]
-        dirs[:] = [d for d in dirs if not d[0] == '.']
+    files = [f for f in files if not f[0] == '.']
+    files = [f for f in files if not f.startswith('_')]
+    dirs[:] = [d for d in dirs if not d[0] == '.']
 
-        for srcfile in files:
-          source_files.append(join(root,srcfile))
+    for srcfile in files:
+      source_files.append(join(root,srcfile))
 ```
 
 _output_path_ tells us where to save a file from _source_files_
 
 ``` python
-    def output_path(srcfile_path):
-      prefix = commonprefix([self.source, srcfile_path])
-      __outfile = relpath(srcfile_path, prefix)
-      return join(siteconfig.output, __outfile)
+def output_path(srcfile_path):
+  prefix = commonprefix([self.source, srcfile_path])
+  __outfile = relpath(srcfile_path, prefix)
+  return join(siteconfig.output, __outfile)
 ```
 
 We have a list of files to be processed and a location for saving them.
@@ -120,31 +120,31 @@ regular expression `^-{3,}$`.
     eyeseast/python-frontmatter](https://github.com/eyeseast/python-frontmatter)
 
 ``` python
-    with open(srcfile, 'r') as tmpl_fh:
-      self.war_text = tmpl_fh.read()
-    tmpl_fh.close()
+with open(srcfile, 'r') as tmpl_fh:
+  self.war_text = tmpl_fh.read()
+tmpl_fh.close()
 
-    regex = re.compile(r'^-{3,}$', re.MULTILINE|re.DOTALL)
-    front_matter, src_content = regex.split(raw_text)[1:]
+regex = re.compile(r'^-{3,}$', re.MULTILINE|re.DOTALL)
+front_matter, src_content = regex.split(raw_text)[1:]
 
-    site = { 'site': vars(siteconfig) }
-    page = { 'page': front_matter }
+site = { 'site': vars(siteconfig) }
+page = { 'page': front_matter }
 
-    __env = jinja2.Environment(loader=jinja2.FileSystemLoader(siteconfig.source))
-    __template = __env.from_string(src_content)
-    rendered_content = __template.render(site=site, page=page)
+__env = jinja2.Environment(loader=jinja2.FileSystemLoader(siteconfig.source))
+__template = __env.from_string(src_content)
+rendered_content = __template.render(site=site, page=page)
 ```
 
 Markdown files are rendered first using python-markdown before
 processing them as templates.
 
 ``` python
-    if markdown_file(srcfile):
-      __template_text = Markdown().convert(src_content)
-    else:
-      __template_text = src_content
+if markdown_file(srcfile):
+  __template_text = Markdown().convert(src_content)
+else:
+  __template_text = src_content
 
-    ...
+...
 
-    __template = __env.from_string(__template_text)
+__template = __env.from_string(__template_text)
 ```
