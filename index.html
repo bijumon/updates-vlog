@@ -8,7 +8,8 @@ title: Home
 
   {% for post in paginator.posts offset:1 %}
     <p>
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%Y %b %d" }}</time>
+      <small>&#9658;</small>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </p>
   {% endfor %}
