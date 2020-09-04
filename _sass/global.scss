@@ -61,6 +61,11 @@ main, header, section, aside, footer {
     /* padding: rem-calc(20); */
 }
 
+.header {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
 .flex-container {
     @media screen and (min-width: 640px){
         display: flex;

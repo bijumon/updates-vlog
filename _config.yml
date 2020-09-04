@@ -4,7 +4,7 @@ tagline: "The truth may be out there, but the lies are inside your head"
 description: "personal blog, built with ruby/jekyll"
 url: https://bijumon.github.io
 baseurl: ""
-paginate: 9
+paginate: 5
 excerpt_separator: <!--more--> 
 permalink: pretty
 timezone: Asia/Kolkata
