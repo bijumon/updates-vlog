@@ -7,14 +7,49 @@ html {
 }
 
 body {    
-    margin: 0;
-    padding: 20px;
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
     font-size: rem-calc(16);
-    line-height: 1.5;
-    color: #ffffff;
-    background-color: black;
+    line-height: 1.6;
 }
+
+a {
+    color: #3030be;
+    text-decoration: none; 
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 2px;
+}
+
+a:hover { color: #8932d9; }
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { 
+    font-size: 1.4rem; 
+    font-style: italic;
+}
+h5 { 
+    font-size: 1.2rem; 
+    font-style: italic;
+}
+h6 { font-size: 0.9rem; }
+
+/*
+  Browser specific (not valid) styles to make preformatted text wrap
+  https://css-tricks.com/snippets/css/make-pre-text-wrap/
+*/
+
+pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+   }
+   
+   .highlight, pre, code {
+     font-family: "Fira Code", monospace;
+   }
 
 .wrapper {
     margin: auto;
@@ -23,22 +58,7 @@ body {
 
 main, header, section, aside, footer {    
     display: block;
-    margin: 0;
-    padding: rem-calc(20);
-    border: 1px solid #000000;
-    color: #ffffff;
-}
-
-main {
-    background: #000000;
-}
-
-.header {
-    background: #03a9f4;
-}
-
-.hero {
-    background: #d22b1f;
+    /* padding: rem-calc(20); */
 }
 
 .flex-container {
@@ -49,40 +69,49 @@ main {
 
 .content {
     flex: 1;
-    background: #129a22;
 }
 
 .sidebar {
     flex: 0 1 300px;
-    border: 1px solid #000000;
-    background: #673ab7;
+
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid #dddddd;
+
+    ul {
+        margin: 0; 
+        padding: 0;
+
+        li {
+            list-style-type: none;
+        }
+    }
 }
 
 .footer {
-    border: 1px solid #000000;
-    background: #616161;
+    border-top: 1px solid #eeeeee;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+      padding: 0 1rem;
+    }
+
+    div.highlight {
+        border-radius: 4px;
+        border: 1px solid #ededed;
+        padding: 0 4px;
+    }
+  }
 
 @media screen and (min-width: 1280px) {
-  body {
-    font-size: rem-calc(18);
+    body {
+      font-size: rem-calc(18);
+    }
+
+    div.highlight {
+        border-radius: 4px;
+        border: 1px solid #ededed;
+        padding: 0 1rem;
+    }
   }
-}
-
-/*
-  Browser specific (not valid) styles to make preformatted text wrap
-  https://css-tricks.com/snippets/css/make-pre-text-wrap/
-*/
-
-pre {
- white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
-
-.highlight, pre, code {
-  font-family: "Fira Code", monospace;
-}
