@@ -81,9 +81,14 @@ main, header, section, aside, footer {
     ul {
         margin: 0; 
         padding: 0;
+        padding-bottom: 1rem;
+
+        border-bottom: 1px solid #dddddd;
 
         li {
             list-style-type: none;
+
+            a { border: 0; }
         }
     }
 }
