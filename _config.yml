@@ -1,16 +1,20 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
-paginate: 1
+title: thud, empty, hollow
+tagline: Coffee was only a way of stealing time that should by rights belong to your slightly older self - Thud! - Pratchett, Terry
+description: ''
+url: https://www.b1ju.in
 baseurl: ""
+paginate: 9
+excerpt_separator: <!--more--> 
 permalink: pretty
+timezone: Asia/Kolkata
 
 # Gems
 plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-commonmark-ghpages
 
 # Optimize Jekyll
 exclude:
@@ -21,21 +25,43 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+  - poole-for-jekyll.gemspec
+  - _attic
 
+markdown: CommonMarkGhPages
 sass:
   sass_dir: _sass
   style: :compressed
 
-# Options
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `page` in Jekyll 2.2.
+    values:
+      layout: "page"
 
 # Replace this value and uncomment to enable Google Analytics tracking
+#
 # ga_analytics: UA-000000-0
 
-# Specify the author for blog posts
+# About/contact
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name: bijumon
+  url: https://github.com/bijumon/
+  email: _not_specified_@mail.com
+  twitter: https://twitter.com/bijupunalor
+  github:
+    repo: https://github.com/bijumon/bijumon.github.io
 
 # Custom vars
 version: 3.0.0
+github:
+  repo: https://github.com/poole/poole

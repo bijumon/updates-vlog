@@ -45,3 +45,56 @@
     margin-left: var(--spacer);
   }
 }
+
+a {
+  text-decoration: none;
+}
+
+.links {
+  section {
+    margin: 1rem 0;
+
+    a::after {
+      color: var(--gray-600);
+      content: "/";
+      margin-left: 4px;
+    }
+    a:first-child:after {
+      content: "\0025b8"
+    }
+    a:last-child:after {
+      content: none;
+      margin-left: 0;
+    }
+  }
+}
+
+.post-title {
+  a {
+    color: var(--link-color);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 18px;
+
+    .content {
+      .masthead {
+        border-bottom: 4px solid var(--gray-100);
+
+        h3 {
+          font-size: 3rem;
+          font-weight: 800;
+
+          small {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 200;
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+}

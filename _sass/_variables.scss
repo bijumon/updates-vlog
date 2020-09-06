@@ -26,7 +26,7 @@
   --blue-400: #4dabf7;
   --yellow-100: #fff3bf;
 
-  --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --body-font: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --body-font-size: 16px;
   --body-line-height: 1.5;
   --body-color: var(--gray-700);
@@ -40,7 +40,7 @@
   --border-color: var(--gray-300);
   --border-radius: .25rem;
 
-  --code-font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --code-font: "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --code-color: var(--grape);
   --code-bg: var(--gray-000);
 
@@ -48,7 +48,7 @@
   --spacer-2: calc(var(--spacer) * 1.5);
   --spacer-3: calc(var(--spacer) * 3);
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --body-color: var(--gray-300);
@@ -64,3 +64,4 @@
     --code-bg: var(--gray-900);
   }
 }
+*/
