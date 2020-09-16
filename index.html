@@ -5,6 +5,16 @@ title: Home
 
 {% include links.html %}
 
+<b>TODO:</b>
+<ul>
+  <li>mobile layout and styles</li>
+  <li>embed fira fonts locally using font-face</li>
+  <li>remove gist</li>
+  <li>large screen layout</li>
+  <li>cleanup junk files</li>
+</ul>
+<hr/><br/>
+
 <div class="posts">
   <article class="post">
   {% for post in paginator.posts %}
@@ -12,7 +22,10 @@ title: Home
       <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
       <a href="{{ post.url | relative_url }}">
         {{ post.title }}
-      </a> - {{ post.description }}
+      </a>
+      {% if post.description %}
+      - {{ post.description }}
+      {% endif %}
     </p>
   {% endfor %}
   </article>
