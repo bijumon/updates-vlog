@@ -5,7 +5,7 @@ updated: 2020-09-29
 
 {{ page.updated | date: "%Y, %B %d" }}
 
-# Gatsbyjs
+## Gatsbyjs
 
 build www.vfxwatch.com using gatsbyjs and tailwind-css.
 
@@ -16,7 +16,7 @@ ref:
 1. [Installation - Tailwind CSS](https://tailwindcss.com/docs/installation)
 1. [tailblocks — Ready-to-use Tailwind CSS blocks](https://mertjf.github.io/tailblocks/)
 
-# pgen
+## pgen
 a static site generator in python. I am learning python 3 and the objective here is to write a simple tool to publish to html my jekyll content folder. This exercise has 3 main objectives
 
 1. design using SOLID OO principles
@@ -26,3 +26,11 @@ a static site generator in python. I am learning python 3 and the objective here
 ref: [Original design](https://bijumon.github.io/2014/12/30/implementing-pgen/)
 
 class Site, SiteConfig, Posts, Post, Page, Feed
+
+## nginx letsencrypt companion
+
+write about setting up a nginx-letsencrypt-companion for https websites, using docker.
+
+## Knuth Book-1, MIX
+
+working through Knuth's first book on algorithms and unserstanding MIX.
