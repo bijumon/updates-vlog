@@ -1,5 +1,5 @@
 ---
-title: two fer
+title: "exersicm python #2 - two fer"
 date: 2020-08-03 00:00 +0530
 ---
 
@@ -8,13 +8,13 @@ date: 2020-08-03 00:00 +0530
 > However, if the name is missing, return the string: "One for you, one for me."
 > 
 > Here are some examples:
-> 
-> |Name    |String to return
-> |:-------|:------------------
-> |Alice   |One for Alice, one for me.
-> |Bob     |One for Bob, one for me.
-> |        |One for you, one for me.
-> |Zaphod  |One for Zaphod, one for me.
+
+|Name    |String to return           |
+|--------|---------------------------|
+|Alice   |One for Alice, one for me. |
+|Bob     |One for Bob, one for me.   |
+|        |One for you, one for me.   |
+|Zaphod  |One for Zaphod, one for me.|
 
 ref: [Python 3's f-Strings: An Improved String Formatting Syntax (Guide) – Real Python](https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python)
 
