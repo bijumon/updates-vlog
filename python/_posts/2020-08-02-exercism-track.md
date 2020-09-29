@@ -1,6 +1,6 @@
 ---
 title: exercism-track
-date: 0202-08-02 09:00 +0530
+date: 2020-08-02 09:00 +0530
 ---
 I am working through Exercism's [Python Track](https://exercism.io/my/tracks/python) coding practice. 
 
