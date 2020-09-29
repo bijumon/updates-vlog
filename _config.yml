@@ -29,6 +29,10 @@ exclude:
   - _attic
 
 markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "table", "tagfilter"]
+
 sass:
   sass_dir: _sass
   style: :compressed
