@@ -34,15 +34,9 @@ exercism-bin /usr/bin/exercism
 
 ``` python
 # pytest hello_world_test.py 
-===================================================================================== test session starts =====================================================================================
-platform linux -- Python 3.8.5, pytest-6.0.1, py-1.9.0, pluggy-0.13.1
-rootdir: /home/user0/Exercism/python/hello-world
-collected 1 item                                                                                                                                                                              
-
-hello_world_test.py F                                                                                                                                                                   [100%]
-
-========================================================================================== FAILURES ===========================================================================================
-_________________________________________________________________________________ HelloWorldTest.test_say_hi __________________________________________________________________________________
+F                                                                                            [100%]
+============================================= FAILURES =============================================
+____________________________________ HelloWorldTest.test_say_hi ____________________________________
 
 self = <hello_world_test.HelloWorldTest testMethod=test_say_hi>
 
@@ -51,23 +45,26 @@ self = <hello_world_test.HelloWorldTest testMethod=test_say_hi>
 E       AssertionError: None != 'Hello, World!'
 
 hello_world_test.py:10: AssertionError
-=================================================================================== short test summary info ===================================================================================
+===================================== short test summary info ======================================
 FAILED hello_world_test.py::HelloWorldTest::test_say_hi - AssertionError: None != 'Hello, World!'
-====================================================================================== 1 failed in 0.50s ======================================================================================
-``` python
+1 failed in 0.06s
+
 # hello_world.py
 
 def hello():
     return 'Hello, World!'
 
 # pytest hello_world_test.py 
-===================================================================================== test session starts =====================================================================================
-platform linux -- Python 3.8.5, pytest-6.0.1, py-1.9.0, pluggy-0.13.1
-rootdir: /home/user0/Exercism/python/hello-world
-collected 1 item                                                                                                                                                                              
-
-hello_world_test.py .                                                                                                                                                                   [100%]
-
-====================================================================================== 1 passed in 0.02s ======================================================================================
+.                                                                                            [100%]
 ```
 
+"Hello, World!" is the traditional first program, when learning a new language. We wrote a `hello` function which returns the string and ran the test suite using [pytest](https://docs.pytest.org/en/stable/) to check we are correct. We need to submit our solution using the `exercism` command. 
+
+``` shell
+exercism submit hello_world.py
+
+    Your solution has been submitted successfully.
+    You can complete the exercise and unlock the next core exercise at:
+
+    https://exercism.io/my/solutions/04bcc66509104f5c91ccb6cc39280a64
+```
