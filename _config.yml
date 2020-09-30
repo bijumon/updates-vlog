@@ -33,6 +33,9 @@ commonmark:
   options: ["SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "table", "tagfilter"]
 
+jekyll_compose:
+  auto_open: true
+
 sass:
   sass_dir: _sass
   style: :compressed
