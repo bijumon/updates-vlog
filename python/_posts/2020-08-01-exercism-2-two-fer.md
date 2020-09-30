@@ -1,6 +1,5 @@
 ---
-title: "exersicm python #2 - two fer"
-date: 2020-08-03 00:00 +0530
+title: "exercism python #2 - two fer"
 ---
 
 > `Two-fer` or `2-fer` is short for two for one. One for you and one for me.
