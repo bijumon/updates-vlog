@@ -8,6 +8,7 @@ paginate: 9
 excerpt_separator: <!--more--> 
 permalink: pretty
 timezone: Asia/Kolkata
+date_format: "%Y %b %d, %H:%M %Z"
 
 # Gems
 plugins:
@@ -40,6 +41,10 @@ sass:
   sass_dir: _sass
   style: :compressed
 
+collections:
+  drafts:
+    output: true
+
 # Front matter defaults
 defaults:
   -
@@ -54,6 +59,12 @@ defaults:
       type: "pages" # previously `page` in Jekyll 2.2.
     values:
       layout: "page"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "drafts"
+    values:
+      layout: "draft"
 
 # Replace this value and uncomment to enable Google Analytics tracking
 #

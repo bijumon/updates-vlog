@@ -1,9 +1,7 @@
 ---
-layout: post
 title: blender where to start?
 date: 2020-09-21 20:36 +0530
-updated: 2020-09-21 20:36 +0530
-category: [ "blender" ]
+tags: [ 3D, design, learn ]
 ---
 
 1. [Fundamentals v2.8 from Blender Foundation- YouTube](https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6)

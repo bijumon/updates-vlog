@@ -1,0 +1,26 @@
+---
+layout:       page
+title:        Drafts
+permalink:    /drafts/
+meta_robots:  noindex
+---
+
+<ul class="drafts">
+  {% assign sorted = site.drafts | sort: 'date' | reverse %}
+  {% for draft in sorted %}
+	<li>
+    <a href="{{ draft.url }}">{{ draft.title }}</a>
+		<small>
+      <em>last updated</em>: {{ draft.date | date: site.date_format }}
+    </small>
+    <p class="description">{{ draft.description }}</p>
+    {% if draft.categories.size > 0 %}
+	  <span>
+      {% for category in draft.categories %}
+      <a href="{{ category }}" class="category">{{ category }}</a>
+      {% endfor %}
+	  </span>
+    {% endif %}
+	</li>
+  {% endfor %}
+</ul>

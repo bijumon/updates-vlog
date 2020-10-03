@@ -3,8 +3,8 @@ layout: default
 title: Home
 ---
 
-<div class="lead-post">
-  {% for post in paginator.posts limit:1 %}
+<div class="post">
+  {% for post in paginator.posts %}
   <article class="post">
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
     <h1 class="post-title">
@@ -17,18 +17,15 @@ title: Home
   {% endfor %}
 </div>
 
-<div class="posts">
-  <p>
-    <b>recent</b>
-  </p>
-
-  <article class="post">
-    {% for post in paginator.posts offset:1 %}
-    <p class="post-title">
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }} - </time>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </p>
-  {% endfor %}
-  </article>
-  <hr/>
-</div>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div

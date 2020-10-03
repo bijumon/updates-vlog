@@ -56,14 +56,6 @@ html {
     }
 }
 
-.lead-post {
-    .post {
-        margin-bottom: 1em;
-        padding-bottom: 1em;
-        border-bottom: 1px solid $gray-2;
-    }
-}
-
 .post-title { text-transform: capitalize; }
 
 .post { 
@@ -104,4 +96,21 @@ pre, code {
     .container {
         max-width: 60em;
     }
+}
+
+.drafts {
+    list-style-type: none;
+    padding: 0;
+
+    li { margin-bottom: 2rem; }
+    small { display: block;}
+
+    .description {
+        margin: 0.5rem 0;
+    }
+}
+
+.footer {
+    border-top: 1px solid #cccccc;
+    padding: 2rem 0;
 }

@@ -1,7 +1,6 @@
 ---
-title: DRAFT - A simple game
-date: 2020-06-19 10:06 +0530
 tags: [ libgdx ]
+description: "port the libgdx sample to kotlin"
 ---
 
 Implement libgdx ["A Simple Game"](https://github.com/libgdx/libgdx/wiki/A-Simple-Game) in kotlin.
