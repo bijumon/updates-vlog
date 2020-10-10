@@ -1,7 +1,5 @@
 # Setup
 title: "Notes"
-tagline: "On game design and coding"
-description: 'gamedev gamedesign Unity Java Kotlin bijumon @bijupunalor bijumon.github.io hosted at <a href="https://help.github.com/articles/using-jekyll-with-pages/">github-pages</a>. modified <a href="https://github.com/poole/poole">poole</a> theme by <a href="http://markdotto.com/about/">mdo</a> ty <3'
 url: https://updates.vfxwatch.com
 baseurl: ""
 paginate: 9
@@ -12,10 +10,9 @@ date_format: "%Y %b %d, %H:%M %Z"
 
 # Gems
 plugins:
-  - jekyll-gist
-  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-commonmark-ghpages
+  - jekyll-paginate
 
 # Optimize Jekyll
 exclude:
@@ -26,19 +23,17 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
-  - poole-for-jekyll.gemspec
-  - _attic
 
 markdown: CommonMarkGhPages
 commonmark:
   options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "table", "tagfilter"]
+  extensions: ["strikethrough", "table"]
 
 jekyll_compose:
   auto_open: true
 
 sass:
-  sass_dir: _sass
+  sass_dir: assets/_sass
   style: :compressed
 
 collections:
@@ -74,12 +69,6 @@ defaults:
 author:
   name: bijumon
   url: https://github.com/bijumon/
-  email: _not_specified_@mail.com
   twitter: https://twitter.com/bijupunalor
   github:
     repo: https://github.com/bijumon/bijumon.github.io
-
-# Custom vars
-version: 3.0.0
-github:
-  repo: https://github.com/poole/poole
